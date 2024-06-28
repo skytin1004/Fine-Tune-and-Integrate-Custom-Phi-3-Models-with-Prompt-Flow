@@ -1,0 +1,18 @@
+inputs:
+  input_data:
+    type: string
+    default: "Who founded Microsoft?"
+
+outputs:
+  answer:
+    type: string
+    reference: ${integrate_with_promptflow.output}
+
+nodes:
+- name: integrate_with_promptflow
+  type: python
+  source:
+    type: code
+    path: integrate_with_promptflow.py
+  inputs:
+    input_data: ${inputs.input_data}
