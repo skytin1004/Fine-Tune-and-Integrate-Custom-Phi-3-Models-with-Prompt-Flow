@@ -19,6 +19,9 @@ Phi-3 is a family of small language models (SLMs) developed by Microsoft that de
 
 Here is an overview of this tutorial.
 
+![00-1-architecture](https://github.com/skytin1004/Fine-Tune-and-Integrate-Custom-Phi-3-Models-with-Prompt-Flow/assets/99078115/979a3689-afc4-4ad2-8c16-38b87f2a6336)
+
+
 ## Table of Contents
 
 **Series 1: Set Up Azure resources and Prepare the environment**
