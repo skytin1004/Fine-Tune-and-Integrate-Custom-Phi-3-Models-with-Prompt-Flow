@@ -19,23 +19,11 @@ Phi-3 is a family of small language models (SLMs) developed by Microsoft that de
 
 Here is an overview of this tutorial.
 
-## Table of Contents
+![00-1-architecture](https://github.com/skytin1004/Fine-Tune-and-Integrate-Custom-Phi-3-Models-with-Prompt-Flow/assets/99078115/979a3689-afc4-4ad2-8c16-38b87f2a6336)
 
-**Series 1: Set Up Azure resources and Prepare the environment**
 
-1. Overview
-1. Request GPU quotas in Azure subscription
-1. Create Azure Machine Learning workspace
-1. Set up the project and install the libraries
-1. Set up project files in Visual Studio Code
-1. Prepare dataset for fine-tuning
+### Reference
 
-**Series 2: Fine-tune and Deploy the Phi-3 model**
+- [microsoft/Phi-3CookBook](https://github.com/microsoft/Phi-3CookBook?wt.mc_id=studentamb_279723)
+- [Azure/azure-llm-fine-tuning](https://github.com/Azure/azure-llm-fine-tuning?wt.mc_id=studentamb_279723)
 
-1. Fine-tune the Phi-3 Model
-1. Deploy the fine-tuned Phi-3 Model
-
-**Series 3: Integrate the custom Phi-3 model with Prompt Flow**
-
-1. Integrate the custom Phi-3 model with Prompt Flow
-1. Congratulation!
