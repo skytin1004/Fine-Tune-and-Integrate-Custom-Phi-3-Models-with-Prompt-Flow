@@ -2,7 +2,7 @@ import logging
 from azure.ai.ml import MLClient, command, Input
 from azure.ai.ml.entities import Environment, AmlCompute
 from azure.identity import AzureCliCredential
-from config import (
+from config_gpu import (
     AZURE_SUBSCRIPTION_ID,
     AZURE_RESOURCE_GROUP_NAME,
     AZURE_ML_WORKSPACE_NAME,
@@ -16,14 +16,13 @@ from config import (
 # COMPUTE_INSTANCE_TYPE = "Standard_E16s_v3" # cpu
 # COMPUTE_NAME = "cpu-e16s-v3"
 # DOCKER_IMAGE_NAME = "mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04:latest"
-# CONDA_FILE = "conda_cpu.yml"
 
 # Uncomment the following lines to use a GPU instance for training
-COMPUTE_INSTANCE_TYPE = "Standard_NC6s_v3"
-COMPUTE_NAME = "gpu-nc6s-v3"
+COMPUTE_INSTANCE_TYPE = "Standard_NC24ads_A100_v4"
+COMPUTE_NAME = "gpu-nc24s-a100-v4"
 DOCKER_IMAGE_NAME = "mcr.microsoft.com/azureml/curated/acft-hf-nlp-gpu:59"
-CONDA_FILE = "conda_gpu.yml"
 
+CONDA_FILE = "conda.yml"
 LOCATION = "eastus2" # Replace with the location of your compute cluster
 FINETUNING_DIR = "./finetuning_dir" # Path to the fine-tuning script
 TRAINING_ENV_NAME = "phi-3-training-environment" # Name of the training environment

@@ -13,14 +13,13 @@ from config import (
 COMPUTE_INSTANCE_TYPE = "Standard_E16s_v3" # cpu
 COMPUTE_NAME = "cpu-e16s-v3"
 DOCKER_IMAGE_NAME = "mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04:latest"
-CONDA_FILE = "conda_cpu.yml"
 
 # Uncomment the following lines to use a GPU instance for training
 # COMPUTE_INSTANCE_TYPE = "Standard_NC6s_v3"
 # COMPUTE_NAME = "gpu-nc6s-v3"
 # DOCKER_IMAGE_NAME = "mcr.microsoft.com/azureml/curated/acft-hf-nlp-gpu:59"
-# CONDA_FILE = "conda.yml"
 
+CONDA_FILE = "conda.yml"
 LOCATION = "eastus2"
 FINETUNING_DIR = "./finetuning_dir"
 TRAIN_FILE_PATH = "data/train_data.jsonl"
