@@ -2,7 +2,7 @@ import logging
 from azure.ai.ml import MLClient, command, Input
 from azure.ai.ml.entities import Environment, AmlCompute
 from azure.identity import AzureCliCredential
-from config_gpu import (
+from config import (
     AZURE_SUBSCRIPTION_ID,
     AZURE_RESOURCE_GROUP_NAME,
     AZURE_ML_WORKSPACE_NAME,
