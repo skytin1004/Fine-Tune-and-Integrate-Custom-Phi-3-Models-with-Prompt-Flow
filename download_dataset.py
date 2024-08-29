@@ -9,7 +9,7 @@ def load_and_split_dataset(dataset_name, config_name, split_ratio):
     """
     Load and split a dataset.
     """
-    # Load the dataset with the specified name and configuration
+    # Load the dataset with the specified name, configuration, and split ratio
     dataset = load_dataset(dataset_name, config_name, split=split_ratio)
     print(f"Original dataset size: {len(dataset)}")
     
@@ -42,8 +42,8 @@ def main():
     """
     Main function to load, split, and save the dataset.
     """
-    # Load and split the dataset with a specific configuration and split ratio
-    dataset = load_and_split_dataset("wikitext", 'wikitext-2-v1', 'train[:1%]')
+    # Load and split the ULTRACHAT_200k dataset with a specific configuration and split ratio
+    dataset = load_and_split_dataset("HuggingFaceH4/ultrachat_200k", 'default', 'train_sft[:1%]')
     
     # Extract the train and test datasets from the split
     train_dataset = dataset['train']

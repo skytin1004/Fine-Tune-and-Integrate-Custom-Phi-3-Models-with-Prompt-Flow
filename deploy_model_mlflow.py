@@ -8,7 +8,7 @@ from azure.ai.ml.constants import AssetTypes
 from config import (
     AZURE_SUBSCRIPTION_ID,
     AZURE_RESOURCE_GROUP_NAME,
-    AZURE_WORKSPACE_NAME,
+    AZURE_ML_WORKSPACE_NAME,
     AZURE_MANAGED_IDENTITY_RESOURCE_ID,
     AZURE_MANAGED_IDENTITY_CLIENT_ID,
     AZURE_MODEL_NAME,
@@ -17,7 +17,7 @@ from config import (
 )
 
 # Constants
-JOB_NAME = "your-job-name"
+JOB_NAME = "gifted_lychee_8yxbx9mqpb"
 COMPUTE_INSTANCE_TYPE = "Standard_E4s_v3"
 
 deployment_env_vars = {
@@ -37,7 +37,7 @@ logger = logging.getLogger(__name__)
 def get_ml_client():
     """Initialize and return the ML Client."""
     credential = AzureCliCredential()
-    return MLClient(credential, AZURE_SUBSCRIPTION_ID, AZURE_RESOURCE_GROUP_NAME, AZURE_WORKSPACE_NAME)
+    return MLClient(credential, AZURE_SUBSCRIPTION_ID, AZURE_RESOURCE_GROUP_NAME, AZURE_ML_WORKSPACE_NAME)
 
 def register_model(ml_client, model_name, job_name):
     """Register a new model."""

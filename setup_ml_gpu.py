@@ -22,7 +22,7 @@ from config import (
 COMPUTE_INSTANCE_TYPE = "Standard_NC6s_v3"
 COMPUTE_NAME = "gpu-nc6s-v3"
 DOCKER_IMAGE_NAME = "mcr.microsoft.com/azureml/curated/acft-hf-nlp-gpu:59"
-CONDA_FILE = "conda.yml"
+CONDA_FILE = "conda_gpu.yml"
 
 LOCATION = "eastus2" # Replace with the location of your compute cluster
 FINETUNING_DIR = "./finetuning_dir" # Path to the fine-tuning script
